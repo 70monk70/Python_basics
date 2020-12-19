@@ -1,15 +1,11 @@
-def my_func(*args):
-    my_list = []
-    for el in args[0]:
-        my_list.append(el)
-        my_list.sort()
+def my_func():
     sum = 0
-    for el in my_list:
-        if el != 'q':
-            sum += int(el)
-        else:
-            break
-    return sum
-
-x = input('Введите строку чисел, для выхода нажмите - q: ').split(' ')
-print(my_func(x))
+    while True:
+        string = input('Введите числа через пробел, для выхода нажмите - q: ').split()
+        for el in string:
+            if el == 'q':
+                print(f'Сумма равна: {sum}')
+                return
+            sum = sum + int(el)
+        print(f'Сумма равна: {sum}')
+my_func()

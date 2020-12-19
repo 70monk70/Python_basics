@@ -8,4 +8,4 @@ def my_func(x, y):
         x = (1/x) * (1/x)
     return x
 
-print(my_func(25, -2))
+print(my_func(1.5, -2))
