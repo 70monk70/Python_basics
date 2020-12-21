@@ -6,6 +6,6 @@ def my_func():
             if el == 'q':
                 print(f'Сумма равна: {sum}')
                 return
-            sum = sum + int(el)
+            sum += int(el)
         print(f'Сумма равна: {sum}')
 my_func()
