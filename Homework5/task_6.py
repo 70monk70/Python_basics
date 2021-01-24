@@ -14,6 +14,6 @@ for el in school_objects:
                 i = int(i)
                 count += i
             except ValueError:
-                None
+                pass
     my_dict.update({el[0]: count})
 print(my_dict)

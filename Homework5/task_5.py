@@ -5,8 +5,7 @@ with open('text_task_5.txt', 'w') as file:
     sum = 0
     for el in word:
         try:
-            el = int(el)
-            sum = sum + el
+           sum += int(el)
         except ValueError:
             print('Ошибка типа данных')
     print(sum)
