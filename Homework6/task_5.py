@@ -1,0 +1,40 @@
+class Stationery:
+    def __init__(self, title):
+        self.title = title
+
+    def draw(self):
+        return f'Запуск отрисовки {self.title}'
+
+
+class Pen(Stationery):
+    def __init__(self, title):
+        super().__init__(title)
+
+    def draw(self):
+        return f'У Вас в руках {self.title}. Запуск отрисовки ручкой.'
+
+
+class Pencil(Stationery):
+    def __init__(self, title):
+        super().__init__(title)
+
+    def draw(self):
+        return f'У Вас в руках {self.title}. Запуск отрисовки карандашом.'
+
+
+class Handle(Stationery):
+    def __init__(self, title):
+        super().__init__(title)
+
+    def draw(self):
+        return f'У Вас в руках {self.title}. Запуск отрисовки маркером.'
+
+stationery = Stationery('Канцелярская принадлежность')
+pen = Pen('Ручка')
+pencil = Pencil('Карандаш')
+handle = Handle('Маркер')
+
+print(stationery.draw())
+print(pen.draw())
+print(pencil.draw())
+print(handle.draw())
